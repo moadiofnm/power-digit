@@ -8,7 +8,7 @@ using namespace std;
 
 unsigned long long int pow(unsigned int a, unsigned int b){
 
-    int sum = a; 
+    long long sum = a; 
 
     if(b == 0){ // base case for 0 power
         return 1 ; 
