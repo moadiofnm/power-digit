@@ -2,6 +2,7 @@
 #include <string>
 #include <cassert>
 #include <cmath>
+#include <vector>
 using namespace std; 
 
 //  I thought about the sum of a = 6 and b = 12 what would be the sum of the digits of
