@@ -3,4 +3,4 @@ all:
 run: 
 	./dow
 
-try: all run 
+try: all run
