@@ -10,9 +10,7 @@ using namespace std;
 
 
 unsigned long long int power(unsigned int a, unsigned int b){
-
     long long sum = a; 
-
     if(b == 0){ // base case for 0 power
         return 1 ; 
     }else if (a == 0){ // base case for 0 base 
@@ -24,10 +22,8 @@ unsigned long long int power(unsigned int a, unsigned int b){
         for(int c = b; c > 1 ; --c){
             sum = sum * a; 
         }
-       
     }
-    return sum; 
-    
+    return sum;    
 }
 
 // changed my initial sum approach. I learned from shawn's appoach using mod to get the indices
@@ -41,13 +37,10 @@ long long power_(long long  powerSum){
         powerSum /= 10; 
     }
     return sum; 
-
-
 }
 
 vector<int> vectorize_digits(unsigned long long n){
     vector<int>digits ; 
-
     while(n > 0){
         int v = n % 10; 
         digits.push_back(v); 
@@ -76,7 +69,6 @@ string vec_to_string(vector<int> vec){
         }
     }
     a += "}";
-    
     return a; 
 }
 
@@ -90,9 +82,7 @@ string Print(vector<string> vec){
         }
     }
     a += "}";
-    
     return a; 
-
 }
 
 
@@ -117,8 +107,6 @@ int test() {
     digit2.push_back("3");
     digit2.push_back("2");
     digit2.push_back("1");
-    
-    
 // testing strings 
     // cout << vec_to_string(digit) << "vec_to_String"<< endl;
     // cout << Print(digit2) << "toString"; 
@@ -145,18 +133,15 @@ int test() {
 
 int main(){
 
-    test(); 
-
+    test(); // testing 
     int a; 
     int b; 
-
     cout << "Enter a "<< endl; 
     cin >> a; 
     cout << "Enter b "<< endl; 
     cin >> b; 
-
     if(a >= 0 && b >= 0 ){
-        if(b * log(a) < 64 *log(2)){
+        if(b * log(a) < 64 *log(2)){ // handel overFlow
             cout <<  "a: " << a << endl;
             cout <<  "b: " << b << endl;
             cout <<  a << "^"<< b << " = " << pow(a,b)<< endl; 
