@@ -155,7 +155,7 @@ int main(){
     cout << "Enter b "<< endl; 
     cin >> b; 
 
-    if(a > 0 && b > 0 ){
+    if(a >= 0 && b >= 0 ){
         if(b * log(a) < 64 *log(2)){
             cout <<  "a: " << a << endl;
             cout <<  "b: " << b << endl;
